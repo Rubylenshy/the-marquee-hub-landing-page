@@ -17,6 +17,10 @@
     box-sizing: border-box;
     font-family: var(--ff-inter);
 }
+body{
+    background: url(../images/bottom-bg.jpg) center no-repeat;
+    background-size: cover;
+}
 ul{
     list-style-type: none;
 }
@@ -24,12 +28,23 @@ a{
     text-decoration: none;
     color: initial;
 }
+li,button{
+    cursor: pointer;
+}
 button{
-    padding: 15px 40px;
+    padding: 15px 30px;
     border: 1px solid var(--desaturated-green);
     background: var(--desaturated-green);
     color: var(--white);
     border-radius: 5px;
+}
+button:hover{
+    background: var(--white);
+    color: var(--desaturated-green);
+}
+.hire-btn:hover{
+    color: var(--white) !important;
+    background: var(--desaturated-green) !important;
 }
 p{
     color: var(--desaturated-green);
@@ -162,6 +177,10 @@ nav{
 .blog p{
     margin-bottom: 30px;
 }
+.blog-gallery div{
+    background: url(../images/blog-img-1.jpg) center no-repeat;
+    background-size: cover;
+}
 
 .newsletter{
     background: var(--desaturated-green);   
@@ -251,6 +270,11 @@ footer .icons img{
 }
 
 
+@media (max-width: 365px) {
+    .hire-btn{
+        margin: 0 0 20px !important;
+    }
+}
 @media (min-width: 600px) {
     .about-us-img{
         display: flex;
@@ -337,12 +361,11 @@ footer .icons img{
         gap: 10px;
     }
     .blog-gallery div{
-        background: url(../images/blog-img-1.jpg) center no-repeat;
-        background-size: cover;
         border-radius: 20px;
         grid-row: 1/3;
         grid-column: 1/2;
-    }.blog-gallery img:nth-child(2){
+    }
+    .blog-gallery img:nth-child(2){
         grid-row: 1/2;
         grid-column: 2/3;
     }.blog-gallery img:nth-child(3){
@@ -363,6 +386,9 @@ footer .icons img{
     input{
         padding: 10px;
     }
+    .blog-gallery img[alt='An eye shut']{
+        display: none !important;
+    }
 }
 
 @media (min-width: 900px) {
@@ -378,6 +404,13 @@ footer .icons img{
     }
     .desktop-links li{
         margin: 0 10px;
+    }
+    .desktop-links li a{
+        color: var(--dark-gray);
+    }
+    .desktop-links li a:hover{
+        font-weight: 500;
+        color: var(--desaturated-green);
     }
 
 
