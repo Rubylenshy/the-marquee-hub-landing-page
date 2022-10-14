@@ -601,7 +601,7 @@ footer .icons img{
 
 @keyframes fade-top {
     from{
-        transform: translateY(-50px);
+        transform: translateY(-100px);
         opacity: 0;
     }
     to{
