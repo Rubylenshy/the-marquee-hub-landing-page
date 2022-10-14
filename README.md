@@ -16,4 +16,4 @@ Thanks for checking out this website.
 
 ## Credits
 
-This Website was curated by HisName - [@]() a UI/UX designer.
+This Website was curated by Babs Ifeoluwa - [@BabsIfeoluwa1](https://twitter.com/BabsIfeoluwa1?t=x9b-mtjVIqFCPzVc8JJajA&s=09) a UI/UX designer.
