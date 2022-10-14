@@ -2,10 +2,10 @@
 
 :root{
     --ash: hsla(0, 1%, 23%, 0.349);
-    --white: hsl(0, 33%, 98%);
+    --white: hsl(0, 40%, 98%);
     --dark-gray: hsl(192, 5%, 63%);
     --black: hsl(0, 3%, 7%);
-    --desaturated-green: hsl(193, 34%, 30%);
+    --desaturated-green: hsl(194, 35%, 30%);
     --ff-inter: 'Inter', sans-serif;
 }
 
@@ -33,7 +33,7 @@ li,button{
 }
 button{
     padding: 15px 30px;
-    border: 1px solid var(--desaturated-green);
+    border: 2px solid var(--desaturated-green);
     background: var(--desaturated-green);
     color: var(--white);
     border-radius: 5px;
@@ -122,12 +122,42 @@ nav{
     left: 100%;
     width: 90%;
     margin: 0 5%;
-    background: var(--white);
+    background: hsl(193, 34%, 30%, 0.7);
     padding: 30px 0;
     border-radius: 10px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
     text-align: center;
-    font-weight: bold;
+    font-size: 1.25em;
     transition: all .3s;
+}
+.mobile-nav li a{
+    color: var(--white);
+}
+.mobile-nav li:nth-child(2):before,
+.mobile-nav li:nth-child(2):after,
+.mobile-nav li:nth-child(4):before,
+.mobile-nav li:nth-child(4):after,
+.mobile-nav li:nth-child(6):before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50px;
+    margin: 15px auto;
+    background: var(--white);
+}
+.mobile-nav button{
+    background: var(--white);
+    color: var(--desaturated-green);
+    font-weight: bold;
+    font-size: 1.15em;
+    border: none;
+    margin-top: 30px;
+}
+.mobile-nav button:focus{
+    background: none;
+    color: var(--white);
+    outline: 2px solid var(--white);
 }
 .mobile-nav.active{
     left: 0;
